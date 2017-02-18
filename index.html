@@ -8,8 +8,27 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
   	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
-<body>
 
+<body background="assets/images/Background.jpg">
+  <header>
+    <h1>Hangman</h1>
+    <h2>Press any key to get started!</h2>
+  </header>
+
+    <h2 id="wins">Wins: </h2>
+    <h2>Category: Food</h2>
+    <h2>Current word</h2>
+
+	<p id="userText"></p>
+	<form name="theForm">
+		<p id="remainingGuesses"></p>
+		<p id="incorrectLetters"></p>
+		<img src="http://www.writteninpencil.de/Projekte/Hangman/hangman0.png" id="hangman"><br />
+	</form>
+
+	<div class="text-center">
+      <button id="randomButton" name="refresh" class="btn btn-primary btn-lg" value="New Game" onClick="location.reload()"><h1><span class="glyphicon">New Session</span></h1></button>
+    </div>
 
 <script src="assets/javascript/game.js"></script>
 </body>
